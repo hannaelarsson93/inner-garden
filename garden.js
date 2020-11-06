@@ -83,7 +83,9 @@ function clearFields() {
       path: "https://assets3.lottiefiles.com/packages/"+filenames[animNumber-1]   //   path: "https://assets10.lottiefiles.com/packages/lf20_xzIOCI.json"
       });
   
- }     
+ }  else{
+  togglePopup()
+  }
  }
  
 
