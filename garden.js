@@ -7,6 +7,7 @@ function togglePopup(){
   document.getElementById("popup-1").classList.toggle("active");
 }
 
+hej jag heter hanna
 
 // A function for checking the textarea element for blanks (doesn't work correctly)
 
