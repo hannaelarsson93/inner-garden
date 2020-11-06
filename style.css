@@ -19,7 +19,7 @@
 
 h1 {
   text-align: center;   
-  padding: 2em; 
+  padding: 1em; 
   font-size: 45px;  
   font-family: 'Space Mono', monospace, arial;
 }
@@ -28,6 +28,7 @@ h2 {
     text-align: center;    
     font-size: 24px;
     font-family: 'Space Mono', monospace, arial;
+    padding-bottom: 1em; 
   }
 
   /* Styles for the span (to make the lines above/below h1) */
@@ -49,7 +50,6 @@ h2 {
     display: flex;
     align-items: center; 
     flex-direction: column; 
-    padding: 2em; 
 }
 
 
@@ -96,7 +96,7 @@ button {
   }
   
 .button-div {
-  padding: 25px; 
+  padding-top: 25px; 
 }
 
 /* Styles for the button element in hover state*/
@@ -120,32 +120,42 @@ button:hover {
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
+    background-color: lightpink; 
+    flex-basis: auto; 
+    align-self: baseline; 
   }
 
   #anim2 {
     max-width: 270px; 
     margin: 0 auto; 
+    background-color: purple; 
+    float: top; 
   }
 
   #anim3 {
     max-width: 270px; 
     margin: 0 auto; 
+    background-color: lightblue;
   }
 
   #anim4 {
     max-width: 270px; 
-    margin: 0 auto; 
+    margin: 0 auto;
+    background-color:  mintcream;   
   }
 
   #anim5 {
     max-width: 270px; 
     margin: 0 auto; 
+    background-color: green;  
   }
 
   .anim-container{
    display: flex; 
    flex-wrap: wrap;
-   float: left; 
+   background-color: pink; 
+   position: fixed; 
+   height: 500px; 
   }
 
 
