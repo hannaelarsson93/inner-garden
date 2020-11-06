@@ -31,11 +31,15 @@ h2 {
   }
 
   /* Styles for the span (to make the lines above/below h1) */
-span {
+.h1-style {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   outline-offset: 0.6em;
   text-transform: uppercase;
+}
+
+.h2-style  {
+  font-weight: bold;
 }
 
 /* Styles for the flex container  */
