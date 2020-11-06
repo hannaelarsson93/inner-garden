@@ -1,0 +1,223 @@
+
+/* Styles for the entire document  */
+
+* {
+  box-sizing: border-box;  
+}
+
+/* Styles for the body element */
+
+/* body {
+  background-image: url(background.jpg);
+} */
+
+
+
+/* styles for texts */
+
+/* Styles for headings (H1, H2) */
+
+h1 {
+  text-align: center;   
+  padding: 2em; 
+  font-size: 45px;  
+  font-family: 'Space Mono', monospace, arial;
+}
+
+h2 {
+    text-align: center;    
+    font-size: 24px;
+    font-family: 'Space Mono', monospace, arial;
+  }
+
+  /* Styles for the span (to make the lines above/below h1) */
+span {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  outline-offset: 0.6em;
+  text-transform: uppercase;
+}
+
+/* Styles for the flex container  */
+
+.form-container {
+    display: flex;
+    align-items: center; 
+    flex-direction: column; 
+    padding: 2em; 
+}
+
+
+/* Styles related to the text area */
+
+/* Styles for the textarea element */
+
+textarea {
+  border-radius: 5px;
+  font-family: 'Space Mono', monospace, arial;
+  resize: none;
+  padding: 8px; 
+  outline: none;  
+  border-color: black; 
+  background-color: #f6f5e6;
+  width: 500px; 
+  height: 50px;
+}
+
+/* Styles for the textarea class */
+
+.textarea {
+  padding: 1em; 
+  max-width: 100%;
+  z-index: 1; 
+}
+
+/* Styles for the button element */
+
+
+button {
+    color: white;
+    background-color: #3e6027; 
+    border-radius: 5px;
+    outline: black;
+    height: 74px; 
+    width: 340px; 
+    outline: none;
+    cursor: url(waterpot.svg), auto;  
+    z-index: 1;  
+    transition: 0.5 ease-in-out; 
+    font-family: 'Space Mono', monospace, arial;
+    font-size: 25px;   
+  }
+  
+.button-div {
+  padding: 25px; 
+}
+
+/* Styles for the button element in hover state*/
+
+button:hover {
+    cursor: url(waterpot.svg), auto; 
+    background-color: #283d19; 
+    outline: black;
+    color: white  
+  }
+
+/* Styles for the animations */
+
+  #anim1 {
+    max-width: 270px; 
+    margin: 0 auto;  
+    /* this makes the picture flip horizontally */
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+
+  #anim2 {
+    max-width: 270px; 
+    margin: 0 auto; 
+  }
+
+  #anim3 {
+    max-width: 270px; 
+    margin: 0 auto; 
+  }
+
+  #anim4 {
+    max-width: 270px; 
+    margin: 0 auto; 
+  }
+
+  #anim5 {
+    max-width: 270px; 
+    margin: 0 auto; 
+  }
+
+  .anim-container{
+   display: flex; 
+   flex-wrap: wrap;
+   float: left; 
+  }
+
+
+/* Styles for the pop-up window */
+
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+
+.popup .content {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  width:500px;
+  height:250px;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  font-family:"Open Sans",sans-serif;
+}
+
+.popup .close-btn {
+  cursor:pointer;
+  position:absolute;
+  right:20px;
+  top:20px;
+  width:30px;
+  height:30px;
+  background:#222;
+  color:#fff;
+  font-size:25px;
+  font-weight:600;
+  line-height:30px;
+  text-align:center;
+  border-radius:50%;
+}
+
+.popup.active .overlay {
+  display:block;
+}
+
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+
+.button-pop {
+  position:absolute;
+  top:30%;
+  left:30%;
+  transform:translate(-50%,-50%);
+  padding:15px;
+  font-size:18px;
+  border:2px solid #222;
+  color:#222;
+  text-transform:uppercase;
+  font-weight:600;
+  background:#fff;
+}
+
+.title-pop{
+  font-size: 25px; 
+  padding: 35px; 
+}
+
+p {
+  font-family: 'Space Mono', monospace, arial;
+}
+
+
+ 

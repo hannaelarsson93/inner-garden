@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--meta data -->
+        <title>Happy Garden</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <!--the scripts goes here -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.js"></script>
+        <script src="garden.js"></script>
+         </head>
+    <body> 
+
+      <!-- pop-up window -->
+      <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">&times;</div>
+          <h1 class="title-pop">Great job!</h1>
+          <p>Now that you have planted the seeds of happiness, you get to harvest the fruit of success.</p>
+        </div>
+      </div>
+       <!-- pop-up window -->
+
+        <!--the content of the website -->
+         <h1><span>Welcome to your inner garden<span></h1>
+         <label>
+            <h2>...Write something nice about yourself and watch your happiness grow</h2>
+          <label>
+     <!--the form feild -->   
+     <form id="forms">
+     <!--the container for the form -->
+        <div class="form-container">
+        <!--the label  division -->
+            <!--the text area division (</textarea> has to be on the same line or placeholder text won't show) -->
+            <div class="textarea">
+              <textarea id="text-field" placeholder="I did amazing just by waking up today..."></textarea>
+            </div>
+            <!--the button division -->
+            <div class="button-div">
+              <button id="button-click" type="button" onclick="togglePopup();showAnimation();play();checkForBlank();"> Make it grow</button>
+            </div>
+          </div>
+     </form>  
+     <!--the end of the form -->
+
+     <!--the animations positioning -->
+     <div class="anim-container">
+     <div id="anim1"></div>
+     <div id="anim2"></div>
+     <div id="anim3"></div>
+     <div id="anim4"></div>
+     <div id="anim5"></div>
+     </div>
+
+    </body>
+</html>
