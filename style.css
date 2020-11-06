@@ -31,6 +31,7 @@ h2 {
   }
 
   /* Styles for the span (to make the lines above/below h1) */
+  
 .h1-style {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
