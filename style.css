@@ -30,6 +30,7 @@ h1 {
   z-index: 10;   
 }
 
+
 h2 {
     text-align: center;    
     font-size: 18px;
@@ -113,11 +114,8 @@ button:hover {
     background-color: #283d19; 
     outline: black;
     color: white  
-  }
+  } 
 
-  .padding {
-    padding: 10em; 
-  }
 
 /* Styles for the animations */
 
@@ -208,10 +206,9 @@ button:hover {
     display: flex; 
     flex-direction: row;
     justify-content: center; 
-    align-items: stretch; 
     width: 100%;
     height: 100%; 
-    flex-wrap: nowrap; 
+    flex-wrap: wrap; 
   }
 
 
