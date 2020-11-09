@@ -37,7 +37,6 @@ var filenames =
 ["lf20_l6qkz2hc.json", "lf20_2qussilj.json", "lf20_tzniy9kj.json", "lf20_tzniy9kj.json", "lf20_van2lrgb.json", "lf20_van2lrgb.json", "lf20_l6qkz2hc.json", "lf20_2qussilj.json"];
 
 
- 
 // Function that makes the sound of birds when the button is pressed
 function play(){
   soundNumber++;
