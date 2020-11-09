@@ -1,5 +1,4 @@
 
-
  
 // function to activate the pop-up
  
@@ -35,25 +34,31 @@ let soundnames =
 // Create a variable for the different endings of the  https: paths to the animations
  
 var filenames =
-["lf20_l6qkz2hc.json", "lf20_2qussilj.json", "lf20_tzniy9kj.json", "lf20_l6qkz2hc.json", "lf20_van2lrgb.json"];
- 
+["lf20_l6qkz2hc.json", "lf20_2qussilj.json", "lf20_tzniy9kj.json", "lf20_tzniy9kj.json", "lf20_van2lrgb.json", "lf20_van2lrgb.json", "lf20_l6qkz2hc.json", "lf20_2qussilj.json"];
+
+
  
 // Function that makes the sound of birds when the button is pressed
- 
 function play(){
+  soundNumber++;
+  soundNumber = 1;
+  clearFields();
  
-   soundNumber++;
+ if (soundNumber == 1){
+  
+  let audio = new Audio ("xxxx.mp3");
+  audio.play();
+
  
-   clearFields();
+  } if(soundNumber == 2) {
  
- if (soundNumber < 6){
- 
-   play();
- 
-   let audio = new Audio ("falcon.mp3");
+   let audio = new Audio ("xxxx.mp3");
    audio.play();
- }
+
+  }
+
 }
+
  
 
 // Function that clears the field as soon as the Button is pressed
@@ -71,10 +76,10 @@ function clearFields() {
   
   clearFields();
   
-  if (animNumber < 6){
+  if (animNumber < 9){
   
     play();
-     
+
     let animation = bodymovin.loadAnimation({
       container: document.getElementById("anim" + animNumber),
       rederer: "svg",
