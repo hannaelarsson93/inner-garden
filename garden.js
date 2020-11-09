@@ -58,7 +58,6 @@ function play(){
 
 }
 
- 
 
 // Function that clears the field as soon as the Button is pressed
 
