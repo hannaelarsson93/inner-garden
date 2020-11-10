@@ -11,15 +11,6 @@ function togglePopup2(){
 }
 
 
-// A function for checking the textarea element for blanks (doesn't work correctly)
-
-// function checkForBlank() {
-//     if (document.getElementById("text-field").value == "") {
-//         alert("Please write something positive");
-//     }
-// }
-
-
 // Create a variable that counts the animations
  
 let animNumber = 0;
@@ -43,9 +34,10 @@ var filenames =
 
 
 // Function that makes the sound of birds when the button is pressed
+
 function play(){
-  soundNumber = Math.floor((animNumber + 1) / 2);
-  //soundNumber = 1;
+  soundNumber = Math.floor((animNumber + 1) / 2)
+
   clearFields();
  
   let audio = new Audio (soundnames[soundNumber]);
