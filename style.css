@@ -11,11 +11,11 @@ html {
    background-image: url(background2.png);
    background-position: center;
    background-repeat: no-repeat;
+   background: cover;
    background-size: 100vW 100vh;
    height: 100%; 
    width: 100% 
 }
-
 
 
 /* styles for texts */  
