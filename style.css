@@ -3,7 +3,8 @@
 
 * {
   box-sizing: border-box;  
-  color: blue; 
+  color: red;
+  color: green; 
 }
 
 /* Styles for the body element */
